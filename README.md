@@ -12,7 +12,7 @@ The package is under development and has no tagged releases.
 
 - Swift tools 6.4 (`swift-tools-version: 6.4`), Swift 6 language mode.
 - macOS 26 (`platforms: [.macOS(.v26)]`). No other platform is declared.
-- `swift-syntax` 600.0.0 or newer (a dependency of the macro target).
+- `swift-syntax` 603.x or 604.x (a dependency of the macro target).
 - The library is built with the experimental `Lifetimes` feature, because views are
   `~Escapable`. Targets that use FlatBin enable `Lifetimes`, and some also `LifetimeDependence`, in
   their `swiftSettings`.
