@@ -5,7 +5,12 @@
 //  Created by Artem Shimanski on 20.05.2026.
 //
 
+#if os(WASI)
+// Full Foundation drags ICU data (tens of megabytes) into a WebAssembly module.
+import FoundationEssentials
+#else
 import Foundation
+#endif
 
 public struct FlatDecoder: Sendable {
     public let data: Data
